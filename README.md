@@ -29,3 +29,6 @@
 ## Issues Faced
 While registering targets in target group i was not able to iterate over items in ec2.taggedinstances variable as 2 instance id were there(only one id was able to get registered). i have to implement a workaround to register 2 instance as target. i've used aws cli and jq to do so. also have setup node js server to print server IP dynamically.
 
+## Refrences
+https://www.w3schools.com/nodejs/nodejs_http.asp
+https://docs.ansible.com/ansible/latest/modules/ec2_module.html

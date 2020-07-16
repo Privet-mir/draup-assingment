@@ -1,0 +1,21 @@
+#- name: Installs nginx web server
+#  apt: pkg=nginx state=installed update_cache=true
+#  notify:
+#    - start nginx
+
+- name: Upload default index.html for host
+  copy: src=static_files/server.js dest=/var/www/html/ mode=0644
+- name: add apt key for nodesource
+  apt_key: url=https://deb.nodesource.com/gpgkey/nodesource.gpg.key
+- name: add repo for nodesource
+  apt_repository:
+        repo: 'deb https://deb.nodesource.com/node_0.10 {{ ansible_distribution_release }} main' 
+        update_cache: yes
+
+- name: install nodejs
+  apt: name=nodejs
+- name: run app
+  shell: "cd /var/www/html; nohup /usr/bin/nodejs server.js  </dev/null >/dev/null 2>&1 &"
+  async: 2592000
+  args:
+    executable: /bin/bash

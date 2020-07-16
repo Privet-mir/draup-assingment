@@ -19,6 +19,6 @@
 
 3. Once script execution is completed goto aws ec2 console and visit load balancer section check if LB state is active, if yes, then copy LB DNS and paste in browser
     
-    ![alt instance1](https://github.com/Privet-mir/zerodha/blob/master/img/instance1.png)
+    ![alt instance1](https://github.com/Privet-mir/draup-assingment/blob/master/img/instance1.png)
 
-    ![alt instance2](https://github.com/Privet-mir/zerodha/blob/master/img/instance2.png)
+    ![alt instance2](https://github.com/Privet-mir/draup-assingment/blob/master/img/instance2.png)

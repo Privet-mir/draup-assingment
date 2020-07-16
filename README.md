@@ -16,6 +16,7 @@
 1. generate ssh keys
 
     ```aws ec2 create-key-pair --key-name draup --query 'KeyMaterial' --output text > draup.pem ```
+    ```chmod 400 draup.pem ```
 
 2. Run Playbook
 

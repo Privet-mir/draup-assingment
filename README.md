@@ -6,6 +6,8 @@
 3. aws cli  (https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
 4. boto3 (pip install boto3 botocore)
 5. jq (sudo apt-get install jq)
+6. replace vpc id and subnet id in group_vars/all file.
+7. configure aws iam user access keys make sure it has proper permission (aws configure)
 
 ## Task
 - [x] Create a `Ansible Playbook` for deployment of EC2 Instance and ELB over AWS

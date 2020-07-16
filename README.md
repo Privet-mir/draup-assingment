@@ -20,7 +20,7 @@
 
 2. Run Playbook
 
-    ```ansible-playbook -i hosts aws.yml --private-keys draup.pem ```
+    ```ansible-playbook -i hosts aws.yml --private-key draup.pem ```
 
 3. Once script execution is completed goto aws ec2 console and visit load balancer section check if LB state is active, if yes, then copy LB DNS and paste in browser
     
